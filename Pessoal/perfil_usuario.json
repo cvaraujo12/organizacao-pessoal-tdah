@@ -1,0 +1,65 @@
+{
+  "perfil_base": {
+    "rotina": {
+      "horario_acordar": "06:00",
+      "horario_dormir": "00:00",
+      "pico_energia": ["Manhã", "Durante efeito da medicação (após 06:00)"],
+      "rotinas_estabelecidas": [
+        "Despertar 06:00 para medicações",
+        "Retorno ao descanso 06:15",
+        "Despertar definitivo 08:00",
+        "Estudos das 09:30 às 11:30 (blocos de 25min)",
+        "Trabalho das 14:00 às 22:50",
+        "Registro financeiro diário 23:40"
+      ]
+    },
+    "estudos": {
+      "concursos_alvo": ["BANESE - Cesgranrio"],
+      "tempo_disponivel": "2 horas pela manhã (09:30-11:30)",
+      "materiais_existentes": ["Pasta banese2025"]
+    },
+    "saude": {
+      "condicoes_saude": ["TDAH (tipo desatento)", "histórico de cálculos renais"],
+      "acompanhamento_medico": [
+        "Psiquiatra (consulta mensal)",
+        "Psicóloga (sessões semanais - terças 10:00)"
+      ],
+      "restricoes_alimentares": ["Dieta vegana"],
+      "medicacoes": {
+        "manha": ["Lisdexanfetamina", "Setralina", "Bupropiona"],
+        "noite": ["Amitriptilina"]
+      },
+      "metas_saude": {
+        "hidratacao": "2.5-3L diários",
+        "peso_atual": "77kg",
+        "objetivos": ["Reduzir sedentarismo", "Implementar exercícios leves adaptados"]
+      }
+    },
+    "gestao_tempo": {
+      "ferramentas_atuais": ["Zenkit"],
+      "desafios_principais": [
+        "Organização financeira (impulsos)",
+        "Manutenção da rotina de estudos",
+        "Estabelecimento de rotina de exercícios",
+        "Estruturação da rotina alimentar"
+      ],
+      "gatilhos_procrastinacao": [
+        "Período antes do efeito da medicação",
+        "Final do efeito da medicação"
+      ]
+    },
+    "preferencias": {
+      "tipo_organizacao": "Digital",
+      "sistema_lembretes": "Zenkit",
+      "sistemas_preferidos": ["Kanban"]
+    }
+  },
+  "ultima_atualizacao": "2024-01-19",
+  "notas_importantes": [
+    "Terças-feiras: Terapia 10:00-11:00",
+    "Uma sexta por mês: Consulta psiquiatra pela manhã",
+    "Meta de hidratação com lembretes específicos",
+    "Checklist noturno estabelecido",
+    "Registro financeiro diário às 23:40"
+  ]
+} 

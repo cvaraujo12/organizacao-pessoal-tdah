@@ -1,0 +1,65 @@
+{
+  "consultas_regulares": {
+    "psiquiatra": {
+      "frequencia": "Mensal",
+      "dia": "Uma sexta por mês",
+      "horario": "Manhã",
+      "observacoes": "Acompanhamento TDAH"
+    },
+    "psicologa": {
+      "frequencia": "Semanal",
+      "dia": "Terça-feira",
+      "horario": "10:00",
+      "observacoes": "Terapia regular"
+    }
+  },
+  "medicacoes": {
+    "manha": [
+      {
+        "nome": "Lisdexanfetamina",
+        "horario": "06:00",
+        "observacoes": "Tomar com água"
+      },
+      {
+        "nome": "Setralina",
+        "horario": "06:00",
+        "observacoes": "Tomar com água"
+      },
+      {
+        "nome": "Bupropiona",
+        "horario": "06:00",
+        "observacoes": "Tomar com água"
+      }
+    ],
+    "noite": [
+      {
+        "nome": "Amitriptilina",
+        "horario": "23:20",
+        "observacoes": "Tomar com água"
+      }
+    ]
+  },
+  "condicoes_saude": {
+    "tdah": {
+      "tipo": "Desatento",
+      "diagnostico": "Confirmado",
+      "tratamento": "Medicação + Terapia"
+    },
+    "renal": {
+      "condicao": "Histórico de cálculos renais",
+      "cuidados": [
+        "Manter hidratação adequada",
+        "Evitar exercícios de alto impacto",
+        "Monitorar alimentação"
+      ]
+    }
+  },
+  "exames_periodicos": {
+    "frequencia": "A definir com médicos",
+    "tipos": [
+      "Função renal",
+      "Hemograma completo",
+      "Outros conforme necessidade"
+    ]
+  }
+} 

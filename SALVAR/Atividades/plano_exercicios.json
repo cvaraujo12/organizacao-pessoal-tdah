@@ -1,0 +1,92 @@
+{
+  "consideracoes": {
+    "tdah": {
+      "adaptacoes": [
+        "Exercícios curtos e variados",
+        "Horários fixos para criar rotina",
+        "Recompensas por conclusão"
+      ]
+    },
+    "saude_renal": {
+      "cuidados": [
+        "Evitar exercícios de alto impacto",
+        "Manter hidratação adequada",
+        "Monitorar intensidade"
+      ]
+    }
+  },
+  "rotina_semanal": {
+    "segunda": {
+      "atividade": "Caminhada leve",
+      "horario": "08:30-09:15",
+      "local": "Ao ar livre",
+      "hidratacao": {
+        "antes": "500ml",
+        "durante": "500ml"
+      }
+    },
+    "quarta": {
+      "atividade": "Yoga adaptada",
+      "horario": "08:30-09:15",
+      "local": "Em casa",
+      "hidratacao": {
+        "antes": "500ml",
+        "durante": "500ml"
+      }
+    },
+    "quinta": {
+      "atividade": "Caminhada leve",
+      "horario": "08:30-09:15",
+      "local": "Ao ar livre",
+      "hidratacao": {
+        "antes": "500ml",
+        "durante": "500ml"
+      }
+    },
+    "sabado": {
+      "atividade": "Alongamento e mobilidade",
+      "horario": "08:30-09:15",
+      "local": "Em casa",
+      "hidratacao": {
+        "antes": "500ml",
+        "durante": "500ml"
+      }
+    }
+  },
+  "progressao": {
+    "fase1": {
+      "semanas": "1-2",
+      "duracao": "15 minutos",
+      "intensidade": "Muito leve"
+    },
+    "fase2": {
+      "semanas": "3-4",
+      "duracao": "20 minutos",
+      "intensidade": "Leve"
+    },
+    "fase3": {
+      "semanas": "5-6",
+      "duracao": "25 minutos",
+      "intensidade": "Leve"
+    },
+    "fase4": {
+      "semanas": "7-8",
+      "duracao": "30 minutos",
+      "intensidade": "Leve-moderada"
+    }
+  },
+  "monitoramento": {
+    "diario": [
+      "Exercício realizado",
+      "Duração",
+      "Intensidade percebida",
+      "Hidratação",
+      "Disposição"
+    ],
+    "semanal": [
+      "Progresso na duração",
+      "Adaptação à intensidade",
+      "Necessidade de ajustes"
+    ]
+  }
+} 
