@@ -1,0 +1,34 @@
+{
+  "concurso": "Banese",
+  "banca": "Cesgranrio",
+  "rotina_estudo": {
+    "ciclos_pomodoro": {
+      "tempo_foco": "25 minutos",
+      "pausa_curta": "5 minutos",
+      "pausa_longa": "15 minutos",
+      "ciclos_ate_pausa_longa": 4
+    },
+    "horarios_sugeridos": [
+      "Manhã: 1-2h após tomar a medicação",
+      "Tarde: Entre 14h e 17h",
+      "Noite: Revisões leves até 21h"
+    ]
+  },
+  "organizacao_materiais": {
+    "pastas": [
+      "01_Editais_e_Documentos",
+      "02_Materiais_por_Disciplina",
+      "03_Resumos",
+      "04_Exercicios",
+      "05_Simulados",
+      "06_Revisoes"
+    ]
+  },
+  "estrategias_tdah": [
+    "Usar mapas mentais coloridos",
+    "Fazer resumos curtos e objetivos",
+    "Resolver questões antes de estudar teoria",
+    "Usar técnica de ensino ativo",
+    "Alternar entre disciplinas a cada ciclo Pomodoro"
+  ]
+} 

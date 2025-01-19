@@ -1,0 +1,55 @@
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração com dados sensíveis
+**/config.json
+**/*.env
+
+# Logs
+logs/
+*.log
+
+# Dependências
+node_modules/
+package-lock.json
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+
+# Arquivos de backup
+*.bak
+*.backup
+
+# Arquivos de cache
+.cache/
+.npm/
+
+# Arquivos pessoais e dados sensíveis
+**/energy_data.json
+**/tasks.json
+**/credentials.json
+**/token.json
+
+# IDEs e editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Arquivos de build
+dist/
+build/
+out/
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Outros
+*.pid
+*.seed
+*.pid.lock 

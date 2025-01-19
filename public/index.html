@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle - Organização Pessoal</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --background-color: #f5f6fa;
+            --text-color: #2c3e50;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+
+        .task-list, .appointment-list {
+            list-style: none;
+        }
+
+        .task-list li, .appointment-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .mood-tracker {
+            display: flex;
+            justify-content: space-between;
+            margin: 10px 0;
+        }
+
+        .mood-option {
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+            background: #eee;
+        }
+
+        .mood-option:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background: #eee;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--accent-color);
+            border-radius: 5px;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        .quick-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .quick-link {
+            padding: 5px 10px;
+            background: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Painel de Controle</h1>
+            <p id="current-date"></p>
+        </header>
+
+        <div class="grid">
+            <div class="card" id="tasks">
+                <h2>Tarefas Prioritárias</h2>
+                <ul class="task-list" id="priority-tasks">
+                    <!-- Tarefas serão inseridas via JavaScript -->
+                </ul>
+            </div>
+
+            <div class="card" id="appointments">
+                <h2>Próximos Compromissos</h2>
+                <ul class="appointment-list" id="upcoming-appointments">
+                    <!-- Compromissos serão inseridos via JavaScript -->
+                </ul>
+            </div>
+
+            <div class="card" id="health">
+                <h2>Saúde & Bem-estar</h2>
+                <div class="mood-tracker">
+                    <div class="mood-option">😊</div>
+                    <div class="mood-option">😐</div>
+                    <div class="mood-option">😔</div>
+                </div>
+                <p>Qualidade do Sono</p>
+                <div class="progress-bar">
+                    <div class="progress-bar-fill" style="width: 70%"></div>
+                </div>
+            </div>
+
+            <div class="card" id="study-progress">
+                <h2>Progresso nos Estudos</h2>
+                <div id="study-stats">
+                    <!-- Estatísticas serão inseridas via JavaScript -->
+                </div>
+            </div>
+
+            <div class="card" id="quick-access">
+                <h2>Acesso Rápido</h2>
+                <div class="quick-links">
+                    <a href="#" class="quick-link">Estudos</a>
+                    <a href="#" class="quick-link">Finanças</a>
+                    <a href="#" class="quick-link">Exercícios</a>
+                    <a href="#" class="quick-link">Alimentação</a>
+                </div>
+            </div>
+
+            <div class="card" id="goals">
+                <h2>Metas em Andamento</h2>
+                <div id="goals-list">
+                    <!-- Metas serão inseridas via JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Atualiza a data
+        function updateDate() {
+            const date = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('current-date').textContent = date.toLocaleDateString('pt-BR', options);
+        }
+
+        // Inicialização
+        document.addEventListener('DOMContentLoaded', () => {
+            updateDate();
+            // Aqui serão adicionadas mais funções de inicialização
+        });
+
+        // Atualização periódica
+        setInterval(updateDate, 60000); // Atualiza a cada minuto
+    </script>
+</body>
+</html> 

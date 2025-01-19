@@ -1,0 +1,64 @@
+{
+  "objetivo": "Estabelecer rotina alimentar vegana com bom custo-benefício",
+  "consideracoes_especiais": [
+    "Adaptado para saúde renal",
+    "Foco em alimentos que auxiliam na concentração",
+    "Baixo teor de sódio",
+    "Rico em proteínas vegetais"
+  ],
+  "estrutura_refeicoes": {
+    "cafe_da_manha": {
+      "horario": "30min após medicação",
+      "opcoes": [
+        "Mingau de aveia com frutas e pasta de amendoim",
+        "Smoothie de banana com pasta de amendoim e leite vegetal",
+        "Pão integral com pasta de grão de bico e tomate"
+      ]
+    },
+    "lanche_manha": {
+      "horario": "2-3h após café",
+      "opcoes": [
+        "Mix de oleaginosas (porção controlada)",
+        "Frutas frescas",
+        "Biscoitos integrais com pasta de amendoim"
+      ]
+    },
+    "almoco": {
+      "horario": "12h-13h",
+      "base": [
+        "Arroz integral ou quinoa",
+        "Feijão ou lentilha",
+        "Legumes variados",
+        "Proteína vegetal (tofu, seitan, grão-de-bico)"
+      ]
+    },
+    "lanche_tarde": {
+      "horario": "15h-16h",
+      "opcoes": [
+        "Frutas com granola",
+        "Smoothie verde",
+        "Hummus com palitos de legumes"
+      ]
+    },
+    "jantar": {
+      "horario": "19h-20h",
+      "opcoes": [
+        "Sopa de legumes com lentilha",
+        "Wrap de legumes com pasta de grão-de-bico",
+        "Bowl de quinoa com legumes e tofu"
+      ]
+    }
+  },
+  "dicas_economia": [
+    "Comprar grãos a granel",
+    "Aproveitar frutas e legumes da estação",
+    "Preparar próprias pastas e patês",
+    "Congelar porções",
+    "Planejar compras semanalmente"
+  ],
+  "suplementacao_recomendada": [
+    "Vitamina B12",
+    "Vitamina D",
+    "Ômega 3 (fonte vegetal)"
+  ]
+} 

@@ -1,0 +1,74 @@
+{
+  "medicacoes": {
+    "tdah": [
+      {
+        "nome": "Lisdexanfetamina",
+        "dosagem": "70mg"
+      },
+      {
+        "nome": "Bupropiona",
+        "dosagem": "75mg"
+      },
+      {
+        "nome": "Setralina",
+        "dosagem": "50mg"
+      },
+      {
+        "nome": "Amitripitilina",
+        "dosagem": "50mg"
+      }
+    ]
+  },
+  "prioridades": [
+    {
+      "area": "Finanças",
+      "descricao": "Melhorar organização financeira e controle de impulsos",
+      "nivel": "Alta",
+      "status": "Pendente"
+    },
+    {
+      "area": "EstudosConcursos",
+      "descricao": "Preparação para concurso Banese (Cesgranrio)",
+      "nivel": "Alta",
+      "status": "Em andamento"
+    },
+    {
+      "area": "Exercícios",
+      "descricao": "Implementar rotina de exercícios leves adaptados",
+      "nivel": "Alta",
+      "status": "Pendente"
+    },
+    {
+      "area": "Alimentação",
+      "descricao": "Estabelecer rotina alimentar vegana com bom custo-benefício",
+      "nivel": "Alta",
+      "status": "Pendente"
+    }
+  ],
+  "metas": [
+    {
+      "titulo": "Aprovação Banese",
+      "prazo": "3 meses",
+      "area": "EstudosConcursos",
+      "status": "Em andamento"
+    }
+  ],
+  "conquistas": [],
+  "notas_neuro": {
+    "dicas_foco": [
+      "Usar técnica Pomodoro adaptada para estudos do concurso",
+      "Criar ambiente de estudo com mínimo de distrações",
+      "Estudar nos horários de pico da medicação"
+    ],
+    "estrategias_produtividade": [
+      "Dividir tarefas em pequenos blocos gerenciáveis",
+      "Usar sistema de recompensas para manter motivação",
+      "Criar rotinas visuais e checklists"
+    ],
+    "lembretes_importantes": [
+      "Manter registro diário das medicações",
+      "Monitorar peso e atividade física",
+      "Planejar refeições com antecedência"
+    ]
+  }
+} 

@@ -1,0 +1,103 @@
+{
+  "semana": "22 a 26 de Janeiro/2025",
+  "objetivo_semanal": "Finalizar Matemática Financeira e iniciar exercícios",
+  "cronograma": {
+    "segunda": {
+      "08:45-09:30": {
+        "atividade": "Matemática Financeira - Séries Uniformes",
+        "material": "Resumo 4",
+        "metodo": "Leitura ativa com anotações"
+      },
+      "09:30-09:35": "Pausa - Alongamento",
+      "09:35-10:20": {
+        "atividade": "Exercícios de Séries Uniformes",
+        "quantidade": "5-7 questões Cesgranrio"
+      },
+      "10:20-10:35": "Pausa - Hidratação e lanche",
+      "10:35-11:20": {
+        "atividade": "Revisão dos tópicos anteriores",
+        "foco": "Juros Simples e Compostos"
+      },
+      "11:20-11:30": "Anotação de dúvidas e planejamento"
+    },
+    "terca": {
+      "08:45-09:30": {
+        "atividade": "Revisão de Séries Uniformes",
+        "metodo": "Mapas mentais"
+      },
+      "09:30-09:45": "Preparação para terapia",
+      "10:00-11:00": "Terapia",
+      "11:00-11:30": "Organização de materiais"
+    },
+    "quarta": {
+      "08:45-09:30": {
+        "atividade": "Matemática Financeira - Equivalência de Capitais",
+        "material": "Resumo 5",
+        "metodo": "Leitura ativa"
+      },
+      "09:30-09:35": "Pausa - Alongamento",
+      "09:35-10:20": {
+        "atividade": "Exercícios de Equivalência",
+        "quantidade": "5-7 questões"
+      },
+      "10:20-10:35": "Pausa - Hidratação e lanche",
+      "10:35-11:20": {
+        "atividade": "Resolução de questões mistas",
+        "foco": "Séries e Equivalência"
+      },
+      "11:20-11:30": "Registro de dúvidas"
+    },
+    "quinta": {
+      "08:45-09:30": {
+        "atividade": "Sistemas de Amortização",
+        "material": "Resumo 6",
+        "metodo": "Leitura e exercícios"
+      },
+      "09:30-09:35": "Pausa - Alongamento",
+      "09:35-10:20": {
+        "atividade": "Exercícios Price e SAC",
+        "quantidade": "5-7 questões"
+      },
+      "10:20-10:35": "Pausa - Hidratação e lanche",
+      "10:35-11:20": {
+        "atividade": "Simulado temático",
+        "foco": "Todos os tópicos vistos"
+      },
+      "11:20-11:30": "Análise de erros"
+    },
+    "sexta": {
+      "08:45-09:30": {
+        "atividade": "Revisão semanal",
+        "metodo": "Resumo dos pontos-chave"
+      },
+      "09:30-09:35": "Pausa - Alongamento",
+      "09:35-10:20": {
+        "atividade": "Resolução de dúvidas",
+        "foco": "Pontos fracos identificados"
+      },
+      "10:20-10:35": "Pausa - Hidratação e lanche",
+      "10:35-11:20": {
+        "atividade": "Exercícios de fixação",
+        "tipo": "Questões mais erradas"
+      },
+      "11:20-11:30": "Planejamento da próxima semana"
+    }
+  },
+  "materiais_necessarios": {
+    "diarios": [
+      "Resumos 4, 5 e 6 de Matemática Financeira",
+      "Calculadora financeira",
+      "Caderno para anotações",
+      "Timer para Pomodoro",
+      "Garrafa de água",
+      "Lanche saudável"
+    ]
+  },
+  "lembretes_tdah": [
+    "Tomar medicação 1h antes dos estudos",
+    "Manter ambiente organizado e silencioso",
+    "Usar cores diferentes para cada tipo de anotação",
+    "Fazer pausas ativas nos intervalos",
+    "Registrar dúvidas imediatamente"
+  ]
+} 

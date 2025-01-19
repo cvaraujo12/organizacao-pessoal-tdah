@@ -1,0 +1,99 @@
+{
+  "checklist_pre_estudo": [
+    {
+      "horario": "07:45",
+      "tarefa": "Tomar medicação",
+      "observacao": "1h antes do início dos estudos"
+    },
+    {
+      "horario": "08:30",
+      "tarefas": [
+        "Preparar ambiente de estudo",
+        "Separar material do dia",
+        "Encher garrafa de água",
+        "Preparar lanche saudável",
+        "Configurar timer Pomodoro"
+      ]
+    },
+    {
+      "horario": "08:40",
+      "tarefas": [
+        "Revisar cronograma do dia",
+        "Definir meta clara",
+        "Silenciar notificações"
+      ]
+    }
+  ],
+  "checklist_durante_estudo": {
+    "ciclo_1": {
+      "horario": "08:45-09:30",
+      "tarefas": [
+        "Iniciar timer (45min)",
+        "Fazer anotações coloridas",
+        "Marcar conceitos-chave",
+        "Criar exemplos práticos"
+      ]
+    },
+    "pausa_1": {
+      "horario": "09:30-09:35",
+      "tarefas": [
+        "Alongamento",
+        "Beber água",
+        "Respiração profunda"
+      ]
+    },
+    "ciclo_2": {
+      "horario": "09:35-10:20",
+      "tarefas": [
+        "Iniciar timer (45min)",
+        "Resolver exercícios",
+        "Marcar dúvidas",
+        "Revisar erros"
+      ]
+    },
+    "pausa_2": {
+      "horario": "10:20-10:35",
+      "tarefas": [
+        "Lanche saudável",
+        "Alongamento",
+        "Hidratação",
+        "Evitar celular"
+      ]
+    },
+    "ciclo_3": {
+      "horario": "10:35-11:20",
+      "tarefas": [
+        "Iniciar timer (45min)",
+        "Resolver questões",
+        "Anotar padrões de erro",
+        "Fazer resumo mental"
+      ]
+    }
+  },
+  "checklist_pos_estudo": {
+    "horario": "11:20-11:30",
+    "tarefas": [
+      "Revisar anotações do dia",
+      "Listar dúvidas principais",
+      "Organizar material",
+      "Planejar próximo dia",
+      "Registrar progresso"
+    ]
+  },
+  "materiais_diarios": [
+    "Resumo do dia",
+    "Caderno de anotações",
+    "Canetas coloridas",
+    "Post-its",
+    "Timer",
+    "Garrafa de água",
+    "Lanche saudável"
+  ],
+  "dicas_tdah": [
+    "Usar códigos de cores para diferentes tipos de informação",
+    "Criar analogias com situações do dia a dia",
+    "Fazer pequenos resumos ao final de cada ciclo",
+    "Alternar entre leitura e exercícios",
+    "Manter registro visual do progresso"
+  ]
+} 
