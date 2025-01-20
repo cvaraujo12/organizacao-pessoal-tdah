@@ -1,0 +1,44 @@
+{
+  "conquistas": {
+    "pequena": {
+      "arquivo": "small_achievement.mp3",
+      "volume": 0.7,
+      "duracao": "0.5s"
+    },
+    "media": {
+      "arquivo": "medium_achievement.mp3",
+      "volume": 0.8,
+      "duracao": "1s"
+    },
+    "grande": {
+      "arquivo": "large_achievement.mp3",
+      "volume": 0.9,
+      "duracao": "1.5s"
+    }
+  },
+  "streaks": {
+    "3_dias": {
+      "arquivo": "streak_3.mp3",
+      "volume": 0.7,
+      "duracao": "1s"
+    },
+    "7_dias": {
+      "arquivo": "streak_7.mp3",
+      "volume": 0.8,
+      "duracao": "1.5s"
+    },
+    "30_dias": {
+      "arquivo": "streak_30.mp3",
+      "volume": 0.9,
+      "duracao": "2s"
+    }
+  },
+  "configuracoes": {
+    "ativo": true,
+    "volume_padrao": 0.7,
+    "horario_silencioso": {
+      "inicio": "22:00",
+      "fim": "08:00"
+    }
+  }
+} 

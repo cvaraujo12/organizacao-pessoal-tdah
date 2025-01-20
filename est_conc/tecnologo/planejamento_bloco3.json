@@ -1,0 +1,87 @@
+{
+    "bloco": 3,
+    "disciplinas": [
+        {
+            "nome": "Gestão Ambiental",
+            "data_liberacao": "12/12/2024",
+            "status": "Não iniciado",
+            "prioridade": "Alta",
+            "cronograma": {
+                "semana1": {
+                    "teoria": "4 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                },
+                "semana2": {
+                    "teoria": "4 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                }
+            }
+        },
+        {
+            "nome": "Introdução à Teoria Geral da Administração",
+            "data_liberacao": "12/12/2024",
+            "status": "Não iniciado",
+            "prioridade": "Média",
+            "cronograma": {
+                "semana1": {
+                    "teoria": "3 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                },
+                "semana2": {
+                    "teoria": "3 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                }
+            }
+        },
+        {
+            "nome": "Metodologia de Pesquisa Científica",
+            "data_liberacao": "12/12/2024",
+            "status": "Não iniciado",
+            "prioridade": "Média",
+            "cronograma": {
+                "semana1": {
+                    "teoria": "3 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                },
+                "semana2": {
+                    "teoria": "3 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                }
+            }
+        },
+        {
+            "nome": "Química Geral",
+            "data_liberacao": "12/12/2024",
+            "status": "Não iniciado",
+            "prioridade": "Alta",
+            "cronograma": {
+                "semana1": {
+                    "teoria": "4 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                },
+                "semana2": {
+                    "teoria": "4 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                }
+            }
+        }
+    ],
+    "meta_semanal_horas": 28,
+    "distribuicao_diaria": {
+        "segunda": "3 horas",
+        "terca": "3 horas",
+        "quarta": "3 horas",
+        "quinta": "3 horas",
+        "sexta": "3 horas",
+        "sabado": "7 horas",
+        "domingo": "6 horas"
+    }
+} 

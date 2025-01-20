@@ -1,0 +1,69 @@
+{
+    "bloco": 1,
+    "disciplinas": [
+        {
+            "nome": "Biodiversidade",
+            "data_liberacao": "12/12/2024",
+            "status": "Não iniciado",
+            "prioridade": "Alta",
+            "cronograma": {
+                "semana1": {
+                    "teoria": "4 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                },
+                "semana2": {
+                    "teoria": "4 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                }
+            }
+        },
+        {
+            "nome": "Ecologia",
+            "data_liberacao": "12/12/2024",
+            "status": "Não iniciado",
+            "prioridade": "Alta",
+            "cronograma": {
+                "semana1": {
+                    "teoria": "4 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                },
+                "semana2": {
+                    "teoria": "4 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                }
+            }
+        },
+        {
+            "nome": "Economia Brasileira",
+            "data_liberacao": "12/12/2024",
+            "status": "Não iniciado",
+            "prioridade": "Média",
+            "cronograma": {
+                "semana1": {
+                    "teoria": "3 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                },
+                "semana2": {
+                    "teoria": "3 horas",
+                    "exercicios": "2 horas",
+                    "revisao": "1 hora"
+                }
+            }
+        }
+    ],
+    "meta_semanal_horas": 21,
+    "distribuicao_diaria": {
+        "segunda": "2 horas",
+        "terca": "2 horas",
+        "quarta": "2 horas",
+        "quinta": "2 horas",
+        "sexta": "2 horas",
+        "sabado": "6 horas",
+        "domingo": "5 horas"
+    }
+} 

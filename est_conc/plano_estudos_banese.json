@@ -1,6 +1,7 @@
 {
   "concurso": "Banese",
   "banca": "Cesgranrio",
+  "data_prova": "06/04/2025",
   "rotina_estudo": {
     "ciclos_pomodoro": {
       "tempo_foco": "25 minutos",
@@ -8,11 +9,13 @@
       "pausa_longa": "15 minutos",
       "ciclos_ate_pausa_longa": 4
     },
-    "horarios_sugeridos": [
-      "Manhã: 1-2h após tomar a medicação",
-      "Tarde: Entre 14h e 17h",
-      "Noite: Revisões leves até 21h"
-    ]
+    "horarios_sugeridos": {
+      "principal": "08:45 até 11:30",
+      "excecoes": {
+        "terca": "Terapia 10:00-11:00",
+        "sexta": "Possível consulta psiquiátrica mensal"
+      }
+    }
   },
   "organizacao_materiais": {
     "pastas": [
@@ -22,13 +25,46 @@
       "04_Exercicios",
       "05_Simulados",
       "06_Revisoes"
-    ]
+    ],
+    "progresso_atual": {
+      "disciplina": "Matemática Financeira",
+      "etapa": "3º resumo",
+      "status": "Em andamento"
+    }
   },
   "estrategias_tdah": [
     "Usar mapas mentais coloridos",
     "Fazer resumos curtos e objetivos",
     "Resolver questões antes de estudar teoria",
     "Usar técnica de ensino ativo",
-    "Alternar entre disciplinas a cada ciclo Pomodoro"
-  ]
+    "Alternar entre disciplinas a cada ciclo Pomodoro",
+    "Estudar no período de maior efeito da medicação"
+  ],
+  "checklist_diario": {
+    "pre_estudo": [
+      "Tomar medicação 1h antes",
+      "Preparar ambiente silencioso",
+      "Separar material necessário",
+      "Definir meta clara para a sessão"
+    ],
+    "durante_estudo": [
+      "Usar timer para Pomodoro",
+      "Fazer anotações coloridas",
+      "Alternar entre teoria e prática",
+      "Registrar dúvidas imediatamente"
+    ],
+    "pos_estudo": [
+      "Revisar anotações do dia",
+      "Organizar material para próxima sessão",
+      "Atualizar registro de progresso"
+    ]
+  },
+  "lembretes": {
+    "tipo": "Email",
+    "horarios": [
+      "08:30 - Preparação para estudos",
+      "09:30 - Início do primeiro bloco",
+      "11:20 - Revisão e organização"
+    ]
+  }
 } 
