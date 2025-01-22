@@ -191,6 +191,14 @@
           {
             "type":"document_management",
             "description": "Para organizar arquivos automaticamente, utilize `/organizar_arquivos [pasta]`. Para realizar uma busca semântica em documentos, utilize `/busca_semantica [termo]`. Para gerar um índice de documentos, utilize `/gerar_indice [pasta]`."
+          },
+          {
+            "type": "painel_status_automation",
+            "description": "Atualiza automaticamente o arquivo painel_status.json na pasta organizador-tdah/ quando houver alterações no desenvolvimento do painel. Monitora mudanças em: progresso geral, fase atual, tarefas completadas, métricas e histórico de alterações. O arquivo deve ser atualizado após cada comando relacionado ao desenvolvimento do painel, testes ou alterações na estrutura do projeto."
+          },
+          {
+            "type": "painel_report_command",
+            "description": "O comando /report-painel deve ler o arquivo painel_status.json da pasta organizador-tdah/ e gerar um relatório formatado com o status atual do desenvolvimento, incluindo: fase atual, progresso, métricas, próximas ações e histórico de alterações recentes."
           }
    ],
   "file_templates": {

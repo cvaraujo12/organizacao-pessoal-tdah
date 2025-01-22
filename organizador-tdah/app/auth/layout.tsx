@@ -1,0 +1,20 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Autenticação - Organizador TDAH',
+  description: 'Área de autenticação do Organizador TDAH',
+};
+
+export default function AuthLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-background">
+      <main className="w-full max-w-md p-6">
+        {children}
+      </main>
+    </div>
+  );
+} 

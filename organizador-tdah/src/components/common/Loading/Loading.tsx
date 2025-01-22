@@ -1,79 +1,58 @@
 import React from 'react';
-import { CircularProgress, Box, LinearProgress, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
+import { cva, type VariantProps } from 'class-variance-authority';
+import { cn } from '@/lib/utils';
 
-interface LoadingProps {
-  variant?: 'circular' | 'linear' | 'skeleton';
-  size?: number;
-  message?: string;
-  fullScreen?: boolean;
+const loadingVariants = cva(
+  'inline-block animate-spin rounded-full border-current border-t-transparent',
+  {
+    variants: {
+      variant: {
+        default: 'text-primary',
+        secondary: 'text-secondary',
+        ghost: 'text-gray-400',
+      },
+      size: {
+        sm: 'h-4 w-4 border-2',
+        default: 'h-6 w-6 border-2',
+        lg: 'h-8 w-8 border-3',
+        xl: 'h-12 w-12 border-4',
+      },
+    },
+    defaultVariants: {
+      variant: 'default',
+      size: 'default',
+    },
+  }
+);
+
+export interface LoadingProps
+  extends React.HTMLAttributes<HTMLDivElement>,
+    VariantProps<typeof loadingVariants> {
+  label?: string;
 }
 
-const Loading: React.FC<LoadingProps> = ({
-  variant = 'circular',
-  size = 40,
-  message = 'Carregando...',
-  fullScreen = false,
-}) => {
-  const theme = useTheme();
+const Loading = React.forwardRef<HTMLDivElement, LoadingProps>(
+  ({ className, variant, size, label, ...props }, ref) => {
+    return (
+      <div
+        ref={ref}
+        role="status"
+        aria-label={label || 'Carregando...'}
+        className="flex items-center justify-center"
+        {...props}
+      >
+        <div
+          className={cn(loadingVariants({ variant, size, className }))}
+        />
+        {label && (
+          <span className="ml-2 text-sm text-gray-500">{label}</span>
+        )}
+        <span className="sr-only">Carregando...</span>
+      </div>
+    );
+  }
+);
 
-  const content = (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: 2,
-        ...(fullScreen && {
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: 'rgba(255, 255, 255, 0.9)',
-          zIndex: theme.zIndex.modal,
-        }),
-      }}
-    >
-      {variant === 'circular' && (
-        <CircularProgress size={size} color="primary" />
-      )}
-      {variant === 'linear' && (
-        <Box sx={{ width: '100%', maxWidth: 300 }}>
-          <LinearProgress color="primary" />
-        </Box>
-      )}
-      {message && (
-        <Typography
-          variant="body1"
-          color="textSecondary"
-          sx={{ mt: 1 }}
-        >
-          {message}
-        </Typography>
-      )}
-    </Box>
-  );
+Loading.displayName = 'Loading';
 
-  return fullScreen ? (
-    <Box
-      sx={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
-      {content}
-    </Box>
-  ) : (
-    content
-  );
-};
-
-export default Loading; 
+export { Loading, loadingVariants }; 

@@ -1,0 +1,112 @@
+{
+  "status_atual": {
+    "fase": 1,
+    "semana": 1,
+    "ultima_atualizacao": "2024-01-22",
+    "progresso_geral": "45%",
+    "estagio": "Configuração do Ambiente"
+  },
+  "fases_completas": [],
+  "fase_atual": {
+    "numero": 1,
+    "nome": "Configuração do Ambiente Base",
+    "status": "em_andamento",
+    "tarefas": {
+      "setup_nextjs": {
+        "status": "completo",
+        "prioridade": "alta",
+        "dependencias": []
+      },
+      "estrutura_pastas": {
+        "status": "completo",
+        "prioridade": "alta",
+        "dependencias": ["setup_nextjs"]
+      },
+      "dependencias_principais": {
+        "status": "completo",
+        "prioridade": "alta",
+        "dependencias": ["setup_nextjs"]
+      },
+      "configuracao_testes": {
+        "status": "completo",
+        "prioridade": "alta",
+        "dependencias": ["dependencias_principais"]
+      },
+      "setup_mongodb": {
+        "status": "completo",
+        "prioridade": "alta",
+        "dependencias": ["dependencias_principais"]
+      },
+      "modelos_dados": {
+        "status": "completo",
+        "prioridade": "alta",
+        "dependencias": ["setup_mongodb"]
+      },
+      "componentes_base": {
+        "status": "completo",
+        "prioridade": "alta",
+        "dependencias": ["estrutura_pastas"]
+      }
+    }
+  },
+  "proximas_acoes_autonomas": [
+    "Implementar autenticação de usuários",
+    "Criar componentes específicos para tarefas e rotinas",
+    "Criar testes para os modelos e componentes"
+  ],
+  "dependencias_usuario": [
+    "Revisar modelos de dados propostos",
+    "Revisar componentes base criados"
+  ],
+  "historico_alteracoes": [
+    {
+      "data": "2024-01-22",
+      "tipo": "ui",
+      "descricao": "Criação dos componentes base",
+      "detalhes": "Implementação dos componentes Card, Button, Input e Loading com suporte a variantes e estados"
+    },
+    {
+      "data": "2024-01-22",
+      "tipo": "modelos",
+      "descricao": "Criação dos modelos de dados",
+      "detalhes": "Implementação dos modelos User, Task e Routine com validação Zod"
+    },
+    {
+      "data": "2024-01-22",
+      "tipo": "banco_dados",
+      "descricao": "Configuração do MongoDB Atlas",
+      "detalhes": "Conexão com MongoDB Atlas estabelecida e testada com sucesso"
+    },
+    {
+      "data": "2024-01-22",
+      "tipo": "banco_dados",
+      "descricao": "Configuração do MongoDB",
+      "detalhes": "Configuração da conexão com MongoDB usando Prisma e Mongoose"
+    },
+    {
+      "data": "2024-01-22",
+      "tipo": "estrutura",
+      "descricao": "Organização de arquivos",
+      "detalhes": "Movimentação de arquivos para dentro da raiz do projeto"
+    },
+    {
+      "data": "2024-01-22",
+      "tipo": "setup",
+      "descricao": "Configuração do ambiente de testes",
+      "detalhes": "Configuração do Jest e Testing Library"
+    },
+    {
+      "data": "2024-01-22",
+      "tipo": "dependencias",
+      "descricao": "Instalação de dependências principais",
+      "detalhes": "Adição de React Query, Prisma, Mongoose, Zod e outras bibliotecas essenciais"
+    }
+  ],
+  "metricas_atuais": {
+    "cobertura_testes": "0%",
+    "lighthouse_score": "N/A",
+    "tempo_resposta": "N/A",
+    "pwa_status": "não iniciado",
+    "ci_cd_status": "não configurado"
+  }
+} 
