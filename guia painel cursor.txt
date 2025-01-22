@@ -1,65 +1,49 @@
-﻿Guia Otimizado:
+﻿Guia Otimizado para IA Agent Cursor (Baseado no guia painel cursorv1.txt):
 
-Ambiente: Ambiente Solus OS configurado.
+Ambiente: Configurar o ambiente Solus OS.
 
-Resultados Esperados: Ferramentas de desenvolvimento (Node.js, npm, git, VS Code) instaladas e funcionando corretamente.
+Resultados Esperados: Ferramentas de desenvolvimento (Node.js, npm, git, VS Code) instaladas e funcionando.
 
-Componentes: Componentes Loading, Error, Toast e Card implementados com funcionalidades e estilos definidos no guia painel cursorv1.txt.
+Componentes: Implementar componentes básicos e de layout (Loading, Skeleton, Error, Toast, Card, Header, Sidebar, Footer).
 
-Resultados Esperados: Componentes funcionais, estilizados, com animações e testes unitários.
+Resultados Esperados: Componentes funcionais, estilizados, com animações e com testes unitários implementados.
 
-Autenticação: Sistema de autenticação implementado (JWT + Refresh Tokens) com base nas configurações definidas no guia painel cursorv1.txt.
+Testes: Implementar testes unitários e E2E.
 
-Resultados Esperados: Autenticação JWT e Refresh Tokens funcionando no backend e frontend.
+Resultados Esperados: Testes unitários (Jest e RTL) e E2E (Cypress) com cobertura mínima de 70%.
 
-Banco de Dados: Banco de dados MongoDB configurado com base nas definições do guia painel cursorv1.txt (estrutura de collections, models).
+Autenticação e Segurança: Implementar sistema de autenticação e segurança.
 
-Resultados Esperados: Conexão com MongoDB funcionando corretamente e com os models definidos.
+Resultados Esperados: Autenticação com JWT + Refresh Tokens, middlewares de autenticação, políticas de senha, rate limiting e CORS.
 
-Funcionalidades: Gestão de tarefas (CRUD, drag & drop, filtros, etc.) e sistema de prioridades implementados.
+Funcionalidades Core: Implementar gestão de tarefas e sistema de prioridades.
 
-Resultados Esperados: Funcionalidades core implementadas e funcionando corretamente.
+Resultados Esperados: CRUD de tarefas, drag & drop, filtros, tags, categorias, visualização Kanban e lista, reordenação e status updates.
 
-PWA: PWA implementado com service worker e manifest.json (configurações definidas no guia painel cursorv1.txt).
+PWA e Offline: Implementar PWA.
 
-Resultados Esperados: PWA instalado e funcionando corretamente, com cache estratégico.
+Resultados Esperados: Service workers, manifest.json, cache estratégico, sincronização offline.
 
-Testes: Testes unitários e E2E implementados com cobertura mínima de 70% (configurações definidas no guia painel cursorv1.txt).
+Banco de Dados: Implementar conexão ao MongoDB e modelos de dados.
 
-Resultados Esperados: Testes unitários com Jest e React Testing Library, e testes E2E com Cypress.
+Resultados Esperados: Banco de dados MongoDB configurado, com backups e modelos de dados para usuários e tarefas.
 
-Deploy: Configuração de deploy com Vercel (configurações definidas no guia painel cursorv1.txt).
+Deploy: Implementar deploy automático com Vercel e GitHub Actions.
 
-Resultados Esperados: Deploy automático funcionando corretamente com GitHub Actions.
+Resultados Esperados: Deploy automático com CI/CD, domínio próprio configurado no Vercel.
 
-Configurações: Sistema configurado seguindo as definições do guia painel cursorv1.txt, incluindo banco de dados, autenticação, deploy, integrações, tema padrão, e funcionalidades.
+Configurações: Utilizar as configurações base do arquivo guia painel cursor.txt, incluindo banco de dados, autenticação, deploy e etc.
 
-Resultados Esperados: Sistema configurado, seguindo os padrões e definições do guia painel cursorv1.txt.
+Resultados esperados: Configurações aplicadas e sistema funcionando.
 
-Documentação: Documentação completa gerada (README, API docs, guias de usuário, documentação técnica) de acordo com as definições do guia painel cursorv1.txt.
+Estrutura: Manter o código organizado.
 
-Resultados Esperados: Documentação completa gerada, com exemplos de uso e workflows.
+Resultados Esperados: Código modular, com pastas e arquivos organizados.
 
-Estrutura: Código modular e organizado, seguindo os padrões definidos no guia painel cursorv1.txt.
+Documentação: Gerar documentação.
 
-Resultados Esperados: Pastas e arquivos organizados, seguindo o padrão definido no guia painel cursorv1.txt.
+Resultados esperados: Documentação gerada.
 
-Variáveis de ambiente: Variáveis de ambiente configuradas, seguindo os padrões definidos no guia painel cursorv1.txt.
+Variáveis de Ambiente: Configurar as variáveis de ambiente.
 
-Resultados Esperados: Variáveis de ambiente configuradas, com base nas definições do guia painel cursorv1.txt.
-
-Diretrizes para a IA Agent Cursor:
-
-Autonomia: Execute as tarefas com autonomia, planejando, implementando e validando cada etapa.
-
-Contexto: Use o guia painel cursorv1.txt como referência para todas as configurações, definições e padrões de estilo do projeto.
-
-Priorização: Priorize a implementação dos testes, componentes básicos e autenticação.
-
-Responsabilidade: Garanta que todas as funcionalidades implementadas atendam aos requisitos e validações com base nas métricas definidas no guia painel cursorv1.txt.
-
-Resolução de Problemas: Use logs, mensagens de erro, documentação e o guia painel cursorv1.txt para resolver problemas.
-
-Refatoração: Refatore o código para melhorar a qualidade e o desempenho, seguindo padrões definidos no guia painel cursorv1.txt.
-
-Documentação: Use suas capacidades para gerar documentação completa e precisa, seguindo as definições e parâmetros do guia painel cursorv1.txt.
+Resultados Esperados: Variáveis de ambiente configuradas.
