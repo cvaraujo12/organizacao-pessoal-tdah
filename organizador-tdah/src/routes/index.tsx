@@ -18,6 +18,7 @@ const Food = React.lazy(() => import('../pages/Food'));
 const Study = React.lazy(() => import('../pages/Study'));
 const Settings = React.lazy(() => import('../pages/Settings'));
 const Login = React.lazy(() => import('../pages/Login'));
+const Register = React.lazy(() => import('../pages/Register'));
 
 interface PrivateRouteProps {
   children: React.ReactNode;
@@ -42,6 +43,7 @@ const AppRoutes: React.FC = () => {
     <React.Suspense fallback={<div>Carregando...</div>}>
       <Routes>
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         
         <Route
           path="/"
