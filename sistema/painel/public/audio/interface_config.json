@@ -1,0 +1,54 @@
+{
+  "temas_sonoros": {
+    "padrao": {
+      "nome": "Minimalista",
+      "descricao": "Sons suaves e discretos",
+      "sons": {
+        "pequena": "minimal_small.mp3",
+        "media": "minimal_medium.mp3",
+        "grande": "minimal_large.mp3"
+      }
+    },
+    "natureza": {
+      "nome": "Natureza",
+      "descricao": "Sons inspirados na natureza",
+      "sons": {
+        "pequena": "nature_small.mp3",
+        "media": "nature_medium.mp3",
+        "grande": "nature_large.mp3"
+      }
+    },
+    "game": {
+      "nome": "Game Style",
+      "descricao": "Sons estilo videogame retrô",
+      "sons": {
+        "pequena": "game_small.mp3",
+        "media": "game_medium.mp3",
+        "grande": "game_large.mp3"
+      }
+    }
+  },
+  "personalizacao": {
+    "permitir_upload": true,
+    "formatos_aceitos": ["mp3", "wav"],
+    "tamanho_maximo": "500kb",
+    "duracao_maxima": "3s"
+  },
+  "interface": {
+    "preview_som": true,
+    "ajuste_volume_individual": true,
+    "visualizacao_onda": true,
+    "temas_visuais": {
+      "claro": {
+        "fundo": "#ffffff",
+        "texto": "#333333",
+        "destaque": "#4CAF50"
+      },
+      "escuro": {
+        "fundo": "#333333",
+        "texto": "#ffffff",
+        "destaque": "#66BB6A"
+      }
+    }
+  }
+} 

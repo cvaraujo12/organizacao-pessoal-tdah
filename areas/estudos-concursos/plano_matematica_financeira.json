@@ -1,0 +1,89 @@
+{
+  "materia": "Matemática Financeira",
+  "status_atual": "3º resumo",
+  "metodologia": {
+    "ciclo_diario": {
+      "teoria": {
+        "duracao": "45 minutos",
+        "metodo": "Leitura ativa com anotações coloridas",
+        "recursos": ["Resumos", "Mapas mentais", "Fórmulas destacadas"]
+      },
+      "pratica": {
+        "duracao": "45 minutos",
+        "metodo": "Resolução de exercícios progressivos",
+        "quantidade": "5-10 questões por sessão"
+      },
+      "revisao": {
+        "duracao": "45 minutos",
+        "metodo": "Questões de provas anteriores",
+        "foco": "Identificar padrões de questões"
+      }
+    }
+  },
+  "topicos_principais": [
+    {
+      "nome": "Juros Simples",
+      "subtopicos": [
+        "Conceito e fórmulas básicas",
+        "Taxa proporcional e equivalente",
+        "Problemas práticos"
+      ]
+    },
+    {
+      "nome": "Juros Compostos",
+      "subtopicos": [
+        "Conceito e fórmulas",
+        "Taxas equivalentes",
+        "Nominal x Efetiva"
+      ]
+    },
+    {
+      "nome": "Descontos",
+      "subtopicos": [
+        "Desconto simples",
+        "Desconto composto",
+        "Desconto bancário"
+      ]
+    },
+    {
+      "nome": "Séries de Pagamentos",
+      "subtopicos": [
+        "Conceito de fluxo de caixa",
+        "Séries uniformes",
+        "Séries variáveis"
+      ]
+    },
+    {
+      "nome": "Sistemas de Amortização",
+      "subtopicos": [
+        "Sistema Price",
+        "Sistema SAC",
+        "Comparações práticas"
+      ]
+    }
+  ],
+  "estrategias_especificas": {
+    "uso_calculadora": {
+      "tipo": "Financeira",
+      "funcoes_principais": [
+        "Cálculo de juros",
+        "Valor presente/futuro",
+        "Prestações"
+      ]
+    },
+    "resolucao_questoes": {
+      "metodo": [
+        "Ler duas vezes a questão",
+        "Destacar dados importantes",
+        "Identificar o que se pede",
+        "Escolher a fórmula adequada",
+        "Conferir unidades e valores"
+      ]
+    }
+  },
+  "material_apoio": {
+    "resumos": "Usar resumos existentes na pasta",
+    "exercicios": "Priorizar questões da Cesgranrio",
+    "videos": "Selecionar vídeos curtos para tópicos complexos"
+  }
+} 

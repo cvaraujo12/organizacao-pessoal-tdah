@@ -1,0 +1,57 @@
+{
+  "orcamento_mensal": {
+    "categorias_principais": {
+      "remedios": {
+        "descricao": "Medicações contínuas",
+        "prioridade": "Alta"
+      },
+      "terapia": {
+        "descricao": "Sessões de terapia",
+        "prioridade": "Alta"
+      },
+      "estudos": {
+        "descricao": "Materiais e cursos para concurso",
+        "prioridade": "Alta"
+      },
+      "alimentacao": {
+        "descricao": "Alimentação vegana",
+        "valor_planejado": 500,
+        "prioridade": "Alta"
+      }
+    },
+    "metas_financeiras": [
+      {
+        "descricao": "Carteira de motorista",
+        "prioridade": "Média",
+        "status": "Em planejamento"
+      }
+    ]
+  },
+  "ferramentas": {
+    "principal": "Minhas Finanças",
+    "complementar": "Zenkit",
+    "registro": {
+      "horario": "23:40",
+      "itens": [
+        "Registrar gastos do dia",
+        "Categorizar despesas",
+        "Verificar pagamentos programados",
+        "Atualizar saldo disponível",
+        "Marcar contas pagas"
+      ]
+    }
+  },
+  "estrategias_tdah": {
+    "controle_impulsos": [
+      "Registrar todos os gastos imediatamente",
+      "Revisar gastos diariamente",
+      "Manter lista de prioridades",
+      "Evitar decisões financeiras no fim do efeito da medicação"
+    ],
+    "organizacao": [
+      "Usar sistema de categorias visual",
+      "Manter lembretes de contas no Zenkit",
+      "Fazer backup dos registros por email"
+    ]
+  }
+} 

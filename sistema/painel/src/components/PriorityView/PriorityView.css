@@ -1,0 +1,285 @@
+.priority-view {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Controles de visualização */
+.view-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.filters select {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.view-mode button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.view-mode button.active {
+  background: #4CAF50;
+  color: white;
+  border-color: #4CAF50;
+}
+
+/* Visualização em Lista */
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.area-section {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.area-section h3 {
+  margin: 0 0 16px;
+  color: #333;
+  font-size: 18px;
+  border-bottom: 2px solid #E0E0E0;
+  padding-bottom: 8px;
+}
+
+.list-items {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list-item {
+  background: white;
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.list-item:hover {
+  transform: translateX(4px);
+}
+
+.list-item-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.list-item-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-pendente {
+  background: #FFE4E1;
+}
+
+.status-em_andamento {
+  background: #E6E6FA;
+}
+
+.status-concluido {
+  background: #F0FFF0;
+}
+
+.status-text {
+  font-size: 12px;
+  color: #666;
+}
+
+.priority-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.priority-alta .priority-badge {
+  background: #FFE4E1;
+  color: #FF7373;
+}
+
+.priority-media .priority-badge {
+  background: #FFF3E0;
+  color: #FFB347;
+}
+
+.priority-baixa .priority-badge {
+  background: #E8F5E9;
+  color: #4CAF50;
+}
+
+.list-item-subtasks {
+  margin: 12px 0;
+  padding-left: 24px;
+}
+
+.list-item-notes {
+  margin-top: 12px;
+  padding: 8px;
+  background: #f8f8f8;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Kanban Board */
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  min-height: 500px;
+}
+
+.kanban-column {
+  flex: 1;
+  background: #f5f5f5;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.kanban-column h3 {
+  margin: 0 0 16px;
+  color: #333;
+  font-size: 16px;
+}
+
+.priority-list {
+  min-height: 100px;
+}
+
+/* Cards de Prioridade */
+.priority-card {
+  background: white;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  cursor: grab;
+}
+
+.priority-card:active {
+  cursor: grabbing;
+}
+
+.priority-alta {
+  border-left: 4px solid #FF7373;
+}
+
+.priority-media {
+  border-left: 4px solid #FFB347;
+}
+
+.priority-baixa {
+  border-left: 4px solid #98FB98;
+}
+
+.priority-card h4 {
+  margin: 0 0 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Subtarefas */
+.subtasks {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.subtask {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.subtask input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Notas Neuro */
+.neuro-notes {
+  margin-top: 8px;
+  padding: 8px;
+  background: #f8f8f8;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.neuro-notes i {
+  margin-right: 8px;
+  color: #4CAF50;
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  .priority-card, .list-item {
+    transition: none;
+  }
+}
+
+/* Alto Contraste */
+@media (prefers-contrast: high) {
+  .priority-card, .list-item {
+    border: 2px solid #000;
+  }
+  
+  .view-mode button.active {
+    background: #000;
+    color: #fff;
+  }
+
+  .status-dot {
+    border: 1px solid #000;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .kanban-board {
+    flex-direction: column;
+  }
+  
+  .kanban-column {
+    margin-bottom: 20px;
+  }
+  
+  .view-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .list-item-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+} 

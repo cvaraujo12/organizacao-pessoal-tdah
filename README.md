@@ -6,40 +6,66 @@ Sistema de organização pessoal adaptado para pessoas com TDAH, com foco em neu
 
 ```
 .
-├── ali/            # Gestão de alimentação
-├── cas/            # Organização da casa
-├── est_conc/       # Estudos para concursos
-├── exe/            # Registro de exercícios
-├── fin/            # Gestão financeira
-├── func/           # Funcionalidades do sistema
-├── metas/          # Metas e conquistas
-├── pes/            # Documentos pessoais
-├── rot/            # Gestão de rotinas
-├── sau/            # Gestão de saúde
-├── src/            # Código fonte do painel
-└── trab/           # Gestão de trabalho/estudos
+├── areas/                    # Áreas da vida
+│   ├── alimentacao/         # Gestão de alimentação e nutrição
+│   ├── casa/               # Organização doméstica
+│   ├── estudos-concursos/  # Materiais e planos de estudo
+│   ├── exercicios/         # Atividades físicas e bem-estar
+│   ├── financas/           # Gestão financeira
+│   ├── metas/             # Sistema de metas e conquistas
+│   ├── pessoal/           # Documentos e projetos pessoais
+│   ├── rotinas/           # Gestão de rotinas diárias
+│   └── saude/             # Acompanhamento de saúde
+│
+├── sistema/                  # Componentes do sistema
+│   ├── painel/             # Interface visual de controle
+│   ├── comandos/           # Sistema de comandos e automações
+│   └── automacao/          # Scripts e ferramentas
+│
+├── config/                   # Configurações
+│   ├── templates/          # Modelos de documentos
+│   └── settings/           # Configurações do sistema
+│
+└── docs/                     # Documentação
+    ├── guias/              # Guias de uso
+    ├── protocolos/         # Protocolos de segurança
+    └── memoria/            # Histórico e memória do projeto
 ```
 
-## Funcionalidades Principais
+## Características Principais
 
-- Sistema de organização baseado em neurociência
-- Gestão de tarefas adaptada para TDAH
-- Controle financeiro simplificado
+- Sistema adaptado para TDAH tipo desatento
+- Organização baseada em neurociência
+- Interface minimalista e não-distrativa
+- Sistema de prioridades adaptativo
+- Gestão de rotinas e tarefas
 - Acompanhamento de saúde e bem-estar
+- Sistema de recompensas e conquistas
+
+## Funcionalidades
+
+- Painel de controle visual
+- Sistema de comandos simplificados
+- Templates adaptados para TDAH
+- Automações e lembretes
+- Banco de prioridades
 - Sistema de metas e conquistas
-- Painel de controle personalizado
+- Integração com ferramentas externas
 
-## Requisitos
+## Uso
 
-- Node.js >= 14.x
-- NPM >= 6.x
+Cada área possui seu próprio README com instruções específicas.
+Para começar:
 
-## Instalação
+1. Explore a pasta `docs/guias/` para orientações gerais
+2. Configure suas preferências em `config/settings/`
+3. Utilize o painel de controle em `sistema/painel/`
+4. Consulte os comandos disponíveis em `sistema/comandos/`
 
-1. Clone o repositório
-2. Instale as dependências: `npm install`
-3. Configure as variáveis de ambiente
-4. Execute: `npm start`
+## Contribuição
+
+Este é um projeto pessoal em constante evolução.
+Sugestões e melhorias são bem-vindas através de issues e pull requests.
 
 ## Licença
 

@@ -1,0 +1,117 @@
+{
+  "plano_exercicios": {
+    "consideracoes_especiais": {
+      "tdah": "Exercícios curtos e variados para manter interesse",
+      "saude_renal": "Evitar exercícios de alto impacto e desidratação"
+    },
+    "rotina_semanal": {
+      "segunda": {
+        "tipo": "Caminhada leve",
+        "horario": "08:30-09:15",
+        "intensidade": "Baixa",
+        "hidratacao": "500ml antes, 500ml durante"
+      },
+      "quarta": {
+        "tipo": "Yoga adaptada",
+        "horario": "08:30-09:15",
+        "intensidade": "Baixa",
+        "hidratacao": "500ml antes, 500ml durante"
+      },
+      "quinta": {
+        "tipo": "Caminhada leve",
+        "horario": "08:30-09:15",
+        "intensidade": "Baixa",
+        "hidratacao": "500ml antes, 500ml durante"
+      },
+      "sabado": {
+        "tipo": "Alongamento e exercícios de mobilidade",
+        "horario": "08:30-09:15",
+        "intensidade": "Baixa",
+        "hidratacao": "500ml antes, 500ml durante"
+      }
+    },
+    "progressao": {
+      "semana1_2": "Caminhada 15 minutos",
+      "semana3_4": "Caminhada 20 minutos",
+      "semana5_6": "Caminhada 25 minutos",
+      "semana7_8": "Caminhada 30 minutos"
+    }
+  },
+  "plano_hidratacao": {
+    "meta_diaria": "2.5-3L",
+    "lembretes": [
+      {"horario": "08:00", "quantidade": "500ml"},
+      {"horario": "10:00", "quantidade": "500ml"},
+      {"horario": "12:00", "quantidade": "500ml"},
+      {"horario": "14:00", "quantidade": "500ml"},
+      {"horario": "16:00", "quantidade": "500ml"},
+      {"horario": "18:00", "quantidade": "500ml"}
+    ],
+    "dicas": [
+      "Manter garrafa de água sempre visível",
+      "Usar app de lembrete de hidratação",
+      "Aumentar ingestão durante exercícios",
+      "Monitorar cor da urina"
+    ]
+  },
+  "alimentacao_vegana": {
+    "consideracoes": {
+      "tdah": "Refeições práticas e preparadas com antecedência",
+      "saude_renal": "Controle de proteína vegetal e minerais"
+    },
+    "refeicoes": {
+      "cafe_da_manha": {
+        "horario": "08:15",
+        "opcoes": [
+          "Mingau de aveia com frutas e pasta de amendoim",
+          "Smoothie de banana com pasta de amendoim",
+          "Pão integral com abacate e tomate"
+        ]
+      },
+      "almoco": {
+        "horario": "16:00",
+        "opcoes": [
+          "Bowl de grãos com legumes e tofu",
+          "Salada com grão de bico e legumes",
+          "Wrap de legumes com homus"
+        ]
+      },
+      "lanche_noite": {
+        "horario": "23:30",
+        "opcoes": [
+          "Frutas com castanhas",
+          "Biscoitos integrais com pasta de amendoim",
+          "Smoothie de frutas"
+        ]
+      }
+    },
+    "prep_refeicoes": {
+      "frequencia": "2x por semana",
+      "dias_sugeridos": ["Domingo", "Quarta"],
+      "dicas": [
+        "Preparar marmitas para 3 dias",
+        "Cortar legumes com antecedência",
+        "Deixar lanches porcionados"
+      ]
+    }
+  },
+  "monitoramento": {
+    "diario": [
+      "Registro de exercícios realizados",
+      "Quantidade de água ingerida",
+      "Refeições realizadas",
+      "Peso",
+      "Disposição física"
+    ],
+    "semanal": [
+      "Análise de progresso nos exercícios",
+      "Ajustes necessários na alimentação",
+      "Planejamento de refeições da semana"
+    ],
+    "mensal": [
+      "Avaliação de peso e medidas",
+      "Revisão dos objetivos",
+      "Ajustes no plano conforme necessidade"
+    ]
+  }
+} 

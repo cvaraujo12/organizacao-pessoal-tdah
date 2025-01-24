@@ -1,0 +1,69 @@
+{
+  "projeto": {
+    "nome": "Organizador Pessoal TDAH",
+    "contexto_atual": "Implementação do sistema base de organização",
+    "modulos": {
+      "organizacao_arquivos": {
+        "status": "em_desenvolvimento",
+        "dependencias": [],
+        "descricao": "Sistema base de organização de arquivos e pastas",
+        "objetivos": [
+          "Criar estrutura de pastas adaptada ao TDAH",
+          "Implementar sistema de categorização intuitivo",
+          "Facilitar busca e recuperação de informações"
+        ]
+      },
+      "painel_controle": {
+        "status": "em_desenvolvimento",
+        "dependencias": ["organizacao_arquivos"],
+        "descricao": "Interface visual para gerenciamento do sistema",
+        "objetivos": [
+          "Criar interface minimalista e não-distrativa",
+          "Implementar visualização de tarefas e progresso",
+          "Facilitar acesso a informações importantes"
+        ]
+      },
+      "banco_prioridades": {
+        "status": "planejado",
+        "dependencias": ["organizacao_arquivos"],
+        "descricao": "Sistema de gestão de prioridades e tarefas",
+        "objetivos": [
+          "Implementar sistema de priorização adaptativo",
+          "Criar mecanismo de lembretes não-intrusivos",
+          "Facilitar decomposição de tarefas complexas"
+        ]
+      },
+      "sistema_estudos": {
+        "status": "planejado",
+        "dependencias": ["organizacao_arquivos", "banco_prioridades"],
+        "descricao": "Sistema de gestão de estudos e materiais",
+        "objetivos": [
+          "Criar sistema de revisão espaçada",
+          "Implementar geração de resumos adaptados",
+          "Facilitar organização de materiais de estudo"
+        ]
+      }
+    }
+  },
+  "sessao": {
+    "modulo_atual": "organizacao_arquivos",
+    "objetivo": "Implementar estrutura base de pastas e arquivos",
+    "contexto_tdah": {
+      "complexidade_atual": 3,
+      "pontos_decisao": 2,
+      "clareza_instrucoes": 8,
+      "sobrecarga_cognitiva": false
+    },
+    "checklist": {
+      "visao_geral_revisada": true,
+      "contexto_definido": true,
+      "objetivo_claro": true,
+      "impacto_analisado": true
+    }
+  },
+  "metricas": {
+    "foco_contexto": 8,
+    "clareza_comunicacao": 7,
+    "fragmentacao": 3
+  }
+} 

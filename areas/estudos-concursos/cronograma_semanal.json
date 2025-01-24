@@ -1,0 +1,81 @@
+{
+  "horario_estudo": {
+    "inicio": "08:45",
+    "termino": "11:30",
+    "observacoes": "Terça: Terapia 10:00-11:00, Uma sexta por mês: Psiquiatra"
+  },
+  "cronograma_semanal": {
+    "segunda": {
+      "08:45-09:30": "Ciclo 1: Matemática Financeira - Teoria",
+      "09:30-09:35": "Pausa curta",
+      "09:35-10:20": "Ciclo 2: Exercícios práticos",
+      "10:20-10:35": "Pausa longa",
+      "10:35-11:20": "Ciclo 3: Resolução de questões anteriores",
+      "11:20-11:30": "Revisão rápida do conteúdo do dia"
+    },
+    "terca": {
+      "08:45-09:30": "Ciclo 1: Revisão do dia anterior",
+      "09:30-09:45": "Preparação para terapia",
+      "10:00-11:00": "Terapia",
+      "11:00-11:30": "Organização de materiais/anotações"
+    },
+    "quarta": {
+      "08:45-09:30": "Ciclo 1: Novo tópico Mat. Financeira",
+      "09:30-09:35": "Pausa curta",
+      "09:35-10:20": "Ciclo 2: Exercícios do novo tópico",
+      "10:20-10:35": "Pausa longa",
+      "10:35-11:20": "Ciclo 3: Questões mescladas",
+      "11:20-11:30": "Anotações de dúvidas"
+    },
+    "quinta": {
+      "08:45-09:30": "Ciclo 1: Resolução de questões",
+      "09:30-09:35": "Pausa curta",
+      "09:35-10:20": "Ciclo 2: Revisão de erros comuns",
+      "10:20-10:35": "Pausa longa",
+      "10:35-11:20": "Ciclo 3: Simulado temático",
+      "11:20-11:30": "Análise de desempenho"
+    },
+    "sexta": {
+      "padrao": {
+        "08:45-09:30": "Ciclo 1: Revisão semanal",
+        "09:30-09:35": "Pausa curta",
+        "09:35-10:20": "Ciclo 2: Pontos de dificuldade",
+        "10:20-10:35": "Pausa longa",
+        "10:35-11:20": "Ciclo 3: Exercícios de fixação",
+        "11:20-11:30": "Planejamento próxima semana"
+      },
+      "dia_psiquiatra": {
+        "observacao": "Adaptar horários conforme consulta"
+      }
+    }
+  },
+  "estrategias_tdah": {
+    "antes_do_estudo": [
+      "Tomar medicação 1h antes",
+      "Preparar ambiente silencioso",
+      "Separar material necessário",
+      "Definir meta clara para a sessão"
+    ],
+    "durante_estudo": [
+      "Usar timer para Pomodoro",
+      "Fazer anotações coloridas",
+      "Alternar entre teoria e prática",
+      "Usar técnica de ensino ativo"
+    ],
+    "pausas": [
+      "Alongar-se",
+      "Beber água",
+      "Respiração profunda",
+      "Evitar celular/distrações"
+    ]
+  },
+  "materiais_necessarios": {
+    "diarios": [
+      "Resumos de Matemática Financeira",
+      "Lista de exercícios",
+      "Calculadora financeira",
+      "Caderno para anotações",
+      "Timer para Pomodoro"
+    ]
+  }
+} 

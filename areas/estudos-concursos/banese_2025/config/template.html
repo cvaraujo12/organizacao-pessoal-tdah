@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Material de estudo adaptado para TDAH - BANESE 2025">
+    <title>$title$</title>
+    $for(css)$
+    <link rel="stylesheet" href="$css$">
+    $endfor$
+    <style>
+        @media print {
+            @page {
+                margin: 2.5cm;
+                size: A4;
+            }
+            body {
+                font-size: 12pt;
+                line-height: 1.6;
+            }
+            .no-print {
+                display: none;
+            }
+        }
+        
+        /* Barra de progresso */
+        .progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #f1f1f1;
+        }
+        
+        .progress {
+            width: 0%;
+            height: 100%;
+            background: #3498db;
+            transition: width 0.3s ease;
+        }
+        
+        /* Guia de leitura */
+        .reading-guide {
+            position: fixed;
+            width: 100%;
+            height: 30px;
+            background: rgba(255, 255, 0, 0.1);
+            pointer-events: none;
+            display: none;
+        }
+        
+        /* Marcadores visuais */
+        .marker-yellow { background-color: rgba(255, 255, 0, 0.3); }
+        .marker-blue { background-color: rgba(52, 152, 219, 0.3); }
+        .marker-green { background-color: rgba(46, 204, 113, 0.3); }
+        
+        /* Ícones de apoio */
+        .icon {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-bar no-print">
+        <div class="progress" id="progress"></div>
+    </div>
+    <div class="reading-guide" id="reading-guide"></div>
+    
+    <header>
+        <nav class="no-print">
+            <button onclick="toggleReadingGuide()">Guia de Leitura</button>
+            <button onclick="increaseFontSize()">A+</button>
+            <button onclick="decreaseFontSize()">A-</button>
+            <button onclick="toggleHighContrast()">Alto Contraste</button>
+        </nav>
+        
+        <h1>$title$</h1>
+        $if(subtitle)$
+        <h2>$subtitle$</h2>
+        $endif$
+        
+        <div class="metadata">
+            <p>Tempo estimado de leitura: <span id="reading-time">0</span> minutos</p>
+            <p>Nível de complexidade: $if(complexity)$$complexity$$else$Intermediário$endif$</p>
+        </div>
+    </header>
+    
+    <main>
+        <div class="content">
+            $body$
+        </div>
+        
+        <aside class="quick-links no-print">
+            <h3>Links Rápidos</h3>
+            <ul id="quick-links"></ul>
+        </aside>
+    </main>
+    
+    <footer>
+        <div class="study-progress no-print">
+            <h4>Progresso do Estudo</h4>
+            <label>
+                <input type="checkbox" onchange="markAsRead()">
+                Marcar como lido
+            </label>
+        </div>
+        
+        <p>Material adaptado para TDAH - BANESE 2025</p>
+        <p>Data de geração: $date$</p>
+        <p>Versão do material: $if(version)$$version$$else$1.0$endif$</p>
+    </footer>
+
+    <script>
+        // Funções de acessibilidade
+        function toggleReadingGuide() {
+            const guide = document.getElementById('reading-guide');
+            guide.style.display = guide.style.display === 'none' ? 'block' : 'none';
+            if (guide.style.display === 'block') {
+                document.addEventListener('mousemove', moveReadingGuide);
+            } else {
+                document.removeEventListener('mousemove', moveReadingGuide);
+            }
+        }
+
+        function moveReadingGuide(e) {
+            const guide = document.getElementById('reading-guide');
+            guide.style.top = (e.pageY - 15) + 'px';
+        }
+
+        function updateProgress() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress').style.width = scrolled + '%';
+        }
+
+        // Calcular tempo de leitura
+        function calculateReadingTime() {
+            const text = document.querySelector('main').innerText;
+            const words = text.trim().split(/\s+/).length;
+            const time = Math.ceil(words / 200); // 200 palavras por minuto
+            document.getElementById('reading-time').textContent = time;
+        }
+
+        // Gerar links rápidos
+        function generateQuickLinks() {
+            const headings = document.querySelectorAll('h2, h3');
+            const ul = document.getElementById('quick-links');
+            headings.forEach(heading => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#' + heading.id;
+                a.textContent = heading.textContent;
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+        }
+
+        // Inicialização
+        window.onload = function() {
+            calculateReadingTime();
+            generateQuickLinks();
+            window.onscroll = updateProgress;
+        };
+    </script>
+</body>
+</html>

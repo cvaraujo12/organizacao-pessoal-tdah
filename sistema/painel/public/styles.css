@@ -1,0 +1,129 @@
+/* Variáveis de Cores e Fontes */
+:root {
+    --primary-color: #333333;
+    --background-color: #f0f0f0;
+    --text-color: #333333;
+    --accent-color: #4CAF50;
+    --card-background: #ffffff;
+    --border-color: #dddddd;
+    --success-color: #4CAF50;
+    --warning-color: #FFC107;
+    --error-color: #F44336;
+}
+
+/* Reset e Estilos Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+/* Layout */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Cards */
+.card {
+    background: var(--card-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+}
+
+/* Cabeçalhos */
+h2, h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+/* Listas */
+.task-list {
+    list-style: none;
+}
+
+.task-item {
+    padding: 12px;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+/* Botões */
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: white;
+    transition: opacity 0.2s ease;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Rastreador de Humor */
+.mood-tracker {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+
+.mood-button {
+    font-size: 1.5em;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.mood-button:hover {
+    transform: scale(1.1);
+}
+
+/* Nível de Energia */
+.energy-level {
+    margin: 20px 0;
+}
+
+.energy-level input[type="range"] {
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .card {
+        margin-bottom: 15px;
+    }
+} 

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Acessibilidade */
+.high-contrast {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+  filter: contrast(150%);
+}
+
+.reduce-motion * {
+  animation: none !important;
+  transition: none !important;
+}
+
+.focus-mode {
+  & > *:not(:focus-within) {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+  }
+  & > *:focus-within {
+    opacity: 1;
+    outline: 2px solid #4f46e5;
+  }
+}
+
+/* Estilos específicos para TDAH */
+.task-card {
+  @apply p-4 rounded-lg shadow-md transition-all duration-200;
+  &:hover {
+    @apply shadow-lg transform translate-y-[-2px];
+  }
+}
+
+.priority-high {
+  @apply border-l-4 border-red-500;
+}
+
+.priority-medium {
+  @apply border-l-4 border-yellow-500;
+}
+
+.priority-low {
+  @apply border-l-4 border-green-500;
+}
