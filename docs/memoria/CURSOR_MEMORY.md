@@ -1,5 +1,203 @@
 # Memória do Projeto: Organizador Pessoal TDAH
 
+## Últimas Atualizações
+- Data: 2024-01-24
+- Status: Consolidação de Estrutura
+- Fase: Resolução de Problemas Estruturais
+
+## Problemas Identificados e Soluções
+
+### 1. Duplicação de Estrutura
+**Problema:** Múltiplos diretórios src e configurações duplicadas
+**Solução:** 
+- Script de consolidação criado (sistema/automacao/consolidate-structure.js)
+- Unificação de configurações em config/settings/project-config.json
+- Padronização de estrutura de diretórios
+
+### 2. Inconsistências de Build
+**Problema:** Configurações conflitantes do Next.js e TypeScript
+**Solução:**
+- Configuração única em project-config.json
+- Remoção de arquivos duplicados
+- Padronização de scripts de build
+
+### 3. Problemas de Tipagem
+**Problema:** Definições de tipos espalhadas e conflitantes
+**Solução:**
+- Centralização de tipos em /src/types
+- Padronização de interfaces
+- Uso consistente de tipos globais
+
+## Padrões Estabelecidos
+
+### 1. Estrutura de Diretórios
+```
+/
+├── src/
+│   ├── app/
+│   ├── components/
+│   └── types/
+├── config/
+│   └── settings/
+├── docs/
+│   └── memoria/
+└── sistema/
+    └── automacao/
+```
+
+### 2. Convenções de Código
+- Componentes: PascalCase
+- Arquivos: kebab-case
+- Funções: camelCase
+- Constantes: UPPER_SNAKE_CASE
+
+### 3. Padrões de Commit
+```bash
+feat: nova funcionalidade
+fix: correção de bug
+refactor: refatoração de código
+docs: atualização de documentação
+style: formatação de código
+test: adição/atualização de testes
+```
+
+## Checklist de Verificação
+
+### Pré-commit
+- [ ] Testes passando
+- [ ] Lint sem erros
+- [ ] Types checados
+- [ ] Build local funcionando
+- [ ] Documentação atualizada
+
+### Pré-build
+- [ ] Dependências atualizadas
+- [ ] Configurações consistentes
+- [ ] Assets otimizados
+- [ ] Variáveis de ambiente configuradas
+- [ ] Rotas testadas
+
+## Decisões Técnicas
+
+### 1. Framework e Bibliotecas
+- Next.js 13+ com App Router
+- React 18+
+- TypeScript strict mode
+- Tailwind + Material-UI
+- Prisma + MongoDB
+
+### 2. Arquitetura
+- Clean Architecture
+- Feature-first organization
+- Atomic Design para componentes
+- Server Components quando possível
+
+### 3. Performance
+- Static Generation preferencial
+- Lazy loading de componentes pesados
+- Otimização de imagens automática
+- Caching estratégico
+
+## Lições Aprendidas
+
+### 1. Estrutura do Projeto
+- Manter estrutura única e clara
+- Evitar duplicação de configurações
+- Documentar decisões arquiteturais
+- Usar ferramentas de automação
+
+### 2. Desenvolvimento
+- Testar em diferentes ambientes
+- Manter logs detalhados
+- Usar TypeScript strict mode
+- Implementar testes desde o início
+
+### 3. Manutenção
+- Atualizar documentação regularmente
+- Manter dependências atualizadas
+- Revisar código periodicamente
+- Monitorar performance
+
+## Próximos Passos
+
+### Imediatos
+1. Executar script de consolidação
+2. Validar nova estrutura
+3. Atualizar documentação
+4. Implementar testes
+
+### Médio Prazo
+1. Melhorar cobertura de testes
+2. Implementar CI/CD
+3. Otimizar performance
+4. Expandir funcionalidades
+
+### Longo Prazo
+1. Implementar analytics
+2. Melhorar acessibilidade
+3. Adicionar internacionalização
+4. Expandir integrações
+
+## Recursos e Links
+
+### Documentação
+- [Next.js](https://nextjs.org/docs)
+- [React](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org/docs)
+- [Tailwind](https://tailwindcss.com/docs)
+
+### Ferramentas
+- [VS Code](https://code.visualstudio.com)
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+- [Postman](https://www.postman.com)
+- [MongoDB Compass](https://www.mongodb.com/products/compass)
+
+## Notas de Desenvolvimento
+
+### Ambiente Local
+```bash
+# Instalação
+npm install
+
+# Desenvolvimento
+npm run dev
+
+# Build
+npm run build
+npm start
+
+# Testes
+npm test
+```
+
+### Scripts Úteis
+```bash
+# Consolidar estrutura
+npm run consolidate
+
+# Verificar sessão
+npm run check
+
+# Protocolo de segurança
+npm run security
+```
+
+### Comandos Git
+```bash
+# Atualizar
+git pull origin main
+
+# Nova feature
+git checkout -b feature/nome
+
+# Commit
+git add .
+git commit -m "tipo: descrição"
+
+# Push
+git push origin feature/nome
+```
+
 ## Checklist Pré-Sessão
 - [x] CURSOR_MEMORY revisado
 - [x] Objetivo definido
@@ -19,12 +217,6 @@
 - Complexidade atual: 3/10
 - Pontos de decisão: 2
 - Pausas recomendadas: 0
-
-## Próximos Passos
-1. Resolver problemas de estrutura de diretórios
-2. Corrigir paths de importação
-3. Implementar sistema de autenticação
-4. Desenvolver dashboard inicial
 
 ## Princípios Fundamentais do Sistema
 
