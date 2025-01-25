@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel TDAH - Estudos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .timer {
+            font-size: 2em;
+            text-align: center;
+        }
+        .task-list {
+            list-style: none;
+            padding: 0;
+        }
+        .task-item {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h2>Timer Pomodoro</h2>
+            <div class="timer" id="timer">25:00</div>
+            <button onclick="toggleTimer()">Iniciar</button>
+            <button onclick="resetTimer()">Resetar</button>
+        </div>
+        
+        <div class="card">
+            <h2>Tarefas de Estudo</h2>
+            <input type="text" id="newTask" placeholder="Nova tarefa...">
+            <button onclick="addTask()">Adicionar</button>
+            <ul class="task-list" id="taskList"></ul>
+        </div>
+        
+        <div class="card">
+            <h2>Notas Rápidas</h2>
+            <textarea id="quickNotes" placeholder="Suas anotações aqui..." rows="10" style="width: 100%"></textarea>
+            <button onclick="saveNotes()">Salvar</button>
+        </div>
+        
+        <div class="card">
+            <h2>Progresso Diário</h2>
+            <div id="progress">
+                <p>Pomodoros completados: <span id="pomodoroCount">0</span></p>
+                <p>Tarefas concluídas: <span id="taskCount">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Timer Pomodoro
+        let timeLeft = 1500; // 25 minutos em segundos
+        let timerId = null;
+        let isPaused = true;
+
+        function toggleTimer() {
+            if (isPaused) {
+                startTimer();
+            } else {
+                pauseTimer();
+            }
+        }
+
+        function startTimer() {
+            isPaused = false;
+            timerId = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+                if (timeLeft === 0) {
+                    completePomodoro();
+                }
+            }, 1000);
+        }
+
+        function pauseTimer() {
+            isPaused = true;
+            clearInterval(timerId);
+        }
+
+        function resetTimer() {
+            pauseTimer();
+            timeLeft = 1500;
+            updateTimerDisplay();
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            document.getElementById('timer').textContent = 
+                `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        }
+
+        function completePomodoro() {
+            pauseTimer();
+            const count = parseInt(localStorage.getItem('pomodoroCount') || '0') + 1;
+            localStorage.setItem('pomodoroCount', count);
+            document.getElementById('pomodoroCount').textContent = count;
+            alert('Pomodoro completo! Faça uma pausa.');
+        }
+
+        // Tarefas
+        function addTask() {
+            const input = document.getElementById('newTask');
+            const task = input.value.trim();
+            if (task) {
+                const tasks = JSON.parse(localStorage.getItem('tasks') || '[]');
+                tasks.push({ text: task, completed: false });
+                localStorage.setItem('tasks', JSON.stringify(tasks));
+                input.value = '';
+                loadTasks();
+            }
+        }
+
+        function toggleTask(index) {
+            const tasks = JSON.parse(localStorage.getItem('tasks') || '[]');
+            tasks[index].completed = !tasks[index].completed;
+            localStorage.setItem('tasks', JSON.stringify(tasks));
+            loadTasks();
+            updateTaskCount();
+        }
+
+        function loadTasks() {
+            const tasks = JSON.parse(localStorage.getItem('tasks') || '[]');
+            const taskList = document.getElementById('taskList');
+            taskList.innerHTML = '';
+            tasks.forEach((task, index) => {
+                const li = document.createElement('li');
+                li.className = 'task-item';
+                li.innerHTML = `
+                    <span style="text-decoration: ${task.completed ? 'line-through' : 'none'}">
+                        ${task.text}
+                    </span>
+                    <button onclick="toggleTask(${index})">${task.completed ? 'Desfazer' : 'Concluir'}</button>
+                `;
+                taskList.appendChild(li);
+            });
+        }
+
+        // Notas
+        function saveNotes() {
+            const notes = document.getElementById('quickNotes').value;
+            localStorage.setItem('notes', notes);
+            alert('Notas salvas!');
+        }
+
+        function loadNotes() {
+            const notes = localStorage.getItem('notes') || '';
+            document.getElementById('quickNotes').value = notes;
+        }
+
+        // Contadores
+        function updateTaskCount() {
+            const tasks = JSON.parse(localStorage.getItem('tasks') || '[]');
+            const completedTasks = tasks.filter(task => task.completed).length;
+            document.getElementById('taskCount').textContent = completedTasks;
+        }
+
+        // Inicialização
+        window.onload = function() {
+            loadTasks();
+            loadNotes();
+            document.getElementById('pomodoroCount').textContent = 
+                localStorage.getItem('pomodoroCount') || '0';
+            updateTaskCount();
+        };
+    </script>
+</body>
+</html> 

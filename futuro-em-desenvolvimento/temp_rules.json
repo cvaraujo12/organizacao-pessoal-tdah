@@ -1,0 +1,62 @@
+{
+ "execution_protocol": {
+   "mandatory_checks": {
+     "pre_execution": [
+       "Verificar entendimento do comando",
+       "Confirmar contexto atual",
+       "Validar recursos necessários"
+     ],
+     "during_execution": [
+       "Documentar cada passo",
+       "Confirmar progresso",
+       "Manter contexto visível"
+     ],
+     "post_execution": [
+       "Validar resultados",
+       "Confirmar completude",
+       "Documentar aprendizados"
+     ]
+   },
+   "tdah_support": {
+     "communication": {
+       "format": "visual_blocks",
+       "confirmation_required": true,
+       "progress_tracking": true
+     },
+     "task_management": {
+       "max_steps_per_block": 3,
+       "visual_markers": true,
+       "context_retention": true
+     }
+   },
+   "development_rules": {
+     "file_analysis": {
+       "depth_required": true,
+       "content_verification": true,
+       "structure_validation": true
+     },
+     "command_execution": {
+       "protocol_check": "/check_exec",
+       "documentation_required": true,
+       "validation_steps": true
+     }
+   }
+ },
+ "verification_steps": {
+   "command_analysis": [
+     "Entender objetivo principal",
+     "Identificar recursos necessários",
+     "Confirmar viabilidade"
+   ],
+   "execution_tracking": [
+     "Registrar cada ação",
+     "Validar resultados parciais",
+     "Confirmar progresso"
+   ],
+   "result_validation": [
+     "Verificar completude",
+     "Confirmar qualidade",
+     "Documentar resultado"
+   ]
+ }
+} 

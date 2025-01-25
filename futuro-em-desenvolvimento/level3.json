@@ -1,0 +1,1 @@
+{"development_level_3":{"neuro_monitoring":{"command":"/exec_test","components":{"assessment_tools":{"neuropsychiatric":{"base_study":"Kooij, 2019","metrics":["Atenção","Controle","Memória"]},"neuropsychological":{"base_study":"Mawjee, 2017","metrics":["Funções executivas","Processamento"]}}},"data_management":{"storage":"neuro_monitoring.json"}}}}

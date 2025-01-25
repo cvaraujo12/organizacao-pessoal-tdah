@@ -1,0 +1,67 @@
+{
+  "status_geral": {
+    "inicio_estudos": "22/01/2024",
+    "prazo_conclusao": "15/02/2024",
+    "status": "Em andamento"
+  },
+  "topicos": [
+    {
+      "id": "01",
+      "nome": "Sistema Financeiro Nacional",
+      "arquivo": "01_sistema_financeiro_nacional/resumo.md",
+      "status": "Próximo",
+      "data_inicio": "22/01/2024",
+      "data_conclusao": null,
+      "prioridade": "Alta",
+      "progresso": {
+        "leitura": false,
+        "resumo": false,
+        "exercicios": false,
+        "revisao": false
+      }
+    },
+    {
+      "id": "02",
+      "nome": "Mercado Financeiro",
+      "arquivo": "02_mercado_financeiro/resumo.md",
+      "status": "Não iniciado",
+      "prioridade": "Alta",
+      "progresso": {
+        "leitura": false,
+        "resumo": false,
+        "exercicios": false,
+        "revisao": false
+      }
+    },
+    {
+      "id": "03",
+      "nome": "Moeda e Política Monetária",
+      "arquivo": "03_moeda_politica_monetaria/resumo.md",
+      "status": "Não iniciado",
+      "prioridade": "Alta",
+      "progresso": {
+        "leitura": false,
+        "resumo": false,
+        "exercicios": false,
+        "revisao": false
+      }
+    }
+  ],
+  "registro_diario": [],
+  "proximas_acoes": [
+    {
+      "data": "22/01/2024",
+      "tema": "Sistema Financeiro Nacional",
+      "atividades": [
+        "Leitura ativa do resumo",
+        "Criação de mapa mental",
+        "Exercícios iniciais"
+      ]
+    }
+  ],
+  "materiais_complementares": {
+    "videos_recomendados": [],
+    "questoes_cesgranrio": [],
+    "noticias_relevantes": []
+  }
+} 

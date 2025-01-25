@@ -1,20 +1,10 @@
 {
-  "name": "organizador-pessoal-tdah",
-  "version": "1.0.0",
-  "private": true,
-  "workspaces": [
-    "sistema/painel"
-  ],
-  "scripts": {
-    "painel:dev": "npm run dev --workspace=sistema/painel",
-    "painel:build": "npm run build --workspace=sistema/painel",
-    "painel:start": "npm run start --workspace=sistema/painel",
-    "painel:test": "npm run test --workspace=sistema/painel",
-    "setup": "npm install && npm run painel:build",
-    "clean": "rm -rf node_modules && rm -rf sistema/painel/node_modules"
-  },
   "devDependencies": {
-    "concurrently": "^8.0.0",
-    "cross-env": "^7.0.0"
+    "@types/node": "^22.10.10"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.48.1",
+    "zustand": "^5.0.3"
   }
-} 
+}
